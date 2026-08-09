@@ -1,0 +1,80 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ProsekaTools.Avalonia.Views.OwnedCardsView">
+  <Grid Margin="8" ColumnDefinitions="*,2*">
+    <ScrollViewer Grid.Column="0">
+      <Border Classes="card">
+        <StackPanel Spacing="10">
+          <TextBlock Text="已拥有的卡片" Classes="sectiontitle" />
+
+          <TextBlock Text="地区 (region)" />
+          <ComboBox x:Name="RegionCombo" Width="160" SelectedIndex="0">
+            <ComboBoxItem Content="jp" />
+            <ComboBoxItem Content="tw" />
+            <ComboBoxItem Content="en" />
+            <ComboBoxItem Content="kr" />
+            <ComboBoxItem Content="cn" />
+          </ComboBox>
+
+          <CheckBox x:Name="UseLatestCheckBox" IsChecked="True" Content="使用最新的 suite 捕获" />
+
+          <StackPanel Orientation="Horizontal" Spacing="8">
+            <Button x:Name="ChooseFileButton" Content="选择文件" />
+            <TextBox x:Name="SelectedFileTextBox" Width="320" IsReadOnly="True" Watermark="未选择文件" />
+          </StackPanel>
+
+          <StackPanel Orientation="Horizontal" Spacing="8">
+            <Button x:Name="StartDecryptButton" Content="开始解密" Classes="accent" />
+            <Button x:Name="LoadLatestJsonButton" Content="载入最新 JSON" />
+            <Button x:Name="ReloadCardsButton" Content="刷新卡面" />
+          </StackPanel>
+
+          <TextBlock x:Name="StatusText" TextWrapping="Wrap" />
+        </StackPanel>
+      </Border>
+    </ScrollViewer>
+
+    <Border Grid.Column="1" Classes="card" Margin="12,0,0,0">
+      <ScrollViewer>
+        <ItemsControl x:Name="CardsItems">
+          <ItemsControl.ItemsPanel>
+            <ItemsPanelTemplate>
+              <WrapPanel Orientation="Horizontal" />
+            </ItemsPanelTemplate>
+          </ItemsControl.ItemsPanel>
+          <ItemsControl.ItemTemplate>
+            <DataTemplate>
+              <Border Classes="panel" Width="196" Margin="6">
+                <StackPanel Width="180" Spacing="6">
+                  <TextBlock Text="{Binding CardId}" FontWeight="Bold" />
+                  <Grid Width="156" Height="156">
+                    <Image Source="{Binding FrameImage}" Stretch="Fill" />
+                    <Border Margin="8">
+                      <Image Source="{Binding CardImage}" Stretch="Uniform" />
+                    </Border>
+                    <Image Source="{Binding AttributeImage}" Width="32" Height="32" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4" />
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="4">
+                      <ItemsControl ItemsSource="{Binding RarityStars}">
+                        <ItemsControl.ItemsPanel>
+                          <ItemsPanelTemplate>
+                            <StackPanel Orientation="Vertical" Spacing="1" />
+                          </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                          <DataTemplate>
+                            <Image Source="{Binding}" Width="16" Height="16" />
+                          </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                      </ItemsControl>
+                    </StackPanel>
+                  </Grid>
+                  <TextBlock Text="{Binding LoadStatus}" FontSize="11" Classes="subtle" />
+                </StackPanel>
+              </Border>
+            </DataTemplate>
+          </ItemsControl.ItemTemplate>
+        </ItemsControl>
+      </ScrollViewer>
+    </Border>
+  </Grid>
+</UserControl>

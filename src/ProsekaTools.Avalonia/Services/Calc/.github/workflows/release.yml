@@ -1,0 +1,50 @@
+name: Build and publish to PyPI
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build_wheels:
+    name: Build wheels
+    uses: ./.github/workflows/build-wheels.yml
+
+  build_sdist:
+    name: Build sdist
+    uses: ./.github/workflows/build-sdist.yml
+
+  publish:
+    name: Publish to PyPI
+    needs:
+      - build_wheels
+      - build_sdist
+    runs-on: ubuntu-latest
+
+    environment:
+      name: pypi-publish
+      url: https://pypi.org/p/sekai-deck-recommend-cpp
+
+    permissions:
+      id-token: write
+      contents: write
+
+    steps:
+      - name: Download wheel artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: dist
+          merge-multiple: true
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          packages-dir: dist/

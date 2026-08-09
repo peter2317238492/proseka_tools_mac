@@ -1,0 +1,235 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ProsekaTools.Avalonia.App"
+             RequestedThemeVariant="Light">
+  <Application.Resources>
+    <SolidColorBrush x:Key="MacBackgroundBrush" Color="#D8D8DC" />
+    <SolidColorBrush x:Key="MacSurfaceBrush" Color="#ECECEF" />
+    <SolidColorBrush x:Key="MacSurfaceMutedBrush" Color="#E5E5E9" />
+    <SolidColorBrush x:Key="MacControlBrush" Color="#F9F9FB" />
+    <SolidColorBrush x:Key="MacControlHoverBrush" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="MacControlPressedBrush" Color="#DADCE3" />
+    <SolidColorBrush x:Key="MacAccentBrush" Color="#0A84FF" />
+    <SolidColorBrush x:Key="MacAccentSoftBrush" Color="#260A84FF" />
+    <SolidColorBrush x:Key="MacDividerBrush" Color="#2A1D2430" />
+    <SolidColorBrush x:Key="MacTextPrimaryBrush" Color="#1D1D1F" />
+    <SolidColorBrush x:Key="MacTextSecondaryBrush" Color="#6E6E73" />
+    <SolidColorBrush x:Key="MacSidebarBrush" Color="#E0E0E4" />
+  </Application.Resources>
+
+  <Application.Styles>
+    <FluentTheme />
+
+    <Style Selector="Window">
+      <Setter Property="FontFamily" Value="SF Pro Text, -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Microsoft YaHei UI" />
+      <Setter Property="FontSize" Value="13" />
+      <Setter Property="Foreground" Value="{DynamicResource MacTextPrimaryBrush}" />
+      <Setter Property="Background" Value="{DynamicResource MacBackgroundBrush}" />
+    </Style>
+
+    <Style Selector="TextBlock">
+      <Setter Property="Foreground" Value="{DynamicResource MacTextPrimaryBrush}" />
+    </Style>
+
+    <Style Selector="TextBlock.sectiontitle">
+      <Setter Property="FontSize" Value="20" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+    </Style>
+
+    <Style Selector="TextBlock.subtle">
+      <Setter Property="Foreground" Value="{DynamicResource MacTextSecondaryBrush}" />
+    </Style>
+
+    <Style Selector="Border.card">
+      <Setter Property="Background" Value="{DynamicResource MacSurfaceBrush}" />
+      <Setter Property="BorderBrush" Value="{DynamicResource MacDividerBrush}" />
+      <Setter Property="BorderThickness" Value="1" />
+      <Setter Property="CornerRadius" Value="14" />
+      <Setter Property="Padding" Value="16" />
+    </Style>
+
+    <Style Selector="Border.panel">
+      <Setter Property="Background" Value="{DynamicResource MacSurfaceMutedBrush}" />
+      <Setter Property="BorderBrush" Value="{DynamicResource MacDividerBrush}" />
+      <Setter Property="BorderThickness" Value="1" />
+      <Setter Property="CornerRadius" Value="12" />
+      <Setter Property="Padding" Value="10" />
+    </Style>
+
+    <Style Selector="Border.sidebar">
+      <Setter Property="Background" Value="{DynamicResource MacSidebarBrush}" />
+      <Setter Property="BorderBrush" Value="{DynamicResource MacDividerBrush}" />
+      <Setter Property="BorderThickness" Value="1" />
+      <Setter Property="CornerRadius" Value="14" />
+      <Setter Property="Padding" Value="12" />
+    </Style>
+
+    <Style Selector="Border.contentpanel">
+      <Setter Property="Background" Value="#F3F3F6" />
+      <Setter Property="BorderBrush" Value="{DynamicResource MacDividerBrush}" />
+      <Setter Property="BorderThickness" Value="1" />
+      <Setter Property="CornerRadius" Value="14" />
+      <Setter Property="Padding" Value="16" />
+    </Style>
+
+    <Style Selector="TextBlock.sideheader">
+      <Setter Property="Foreground" Value="#8A8A90" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+      <Setter Property="Margin" Value="4,6,0,2" />
+    </Style>
+
+    <Style Selector="TextBlock.navicon">
+      <Setter Property="FontSize" Value="15" />
+      <Setter Property="Width" Value="18" />
+      <Setter Property="HorizontalAlignment" Value="Center" />
+      <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
+
+    <Style Selector="TextBlock.pagetitle">
+      <Setter Property="FontSize" Value="34" />
+      <Setter Property="FontWeight" Value="Bold" />
+      <Setter Property="Foreground" Value="{DynamicResource MacTextPrimaryBrush}" />
+    </Style>
+
+    <Style Selector="TextBlock.pagesubtitle">
+      <Setter Property="FontSize" Value="15" />
+      <Setter Property="FontWeight" Value="Normal" />
+      <Setter Property="Foreground" Value="{DynamicResource MacTextSecondaryBrush}" />
+      <Setter Property="Margin" Value="0,4,0,0" />
+    </Style>
+
+    <Style Selector="Button">
+      <Setter Property="Background" Value="{DynamicResource MacControlBrush}" />
+      <Setter Property="BorderBrush" Value="{DynamicResource MacDividerBrush}" />
+      <Setter Property="BorderThickness" Value="1" />
+      <Setter Property="Padding" Value="14,6" />
+      <Setter Property="MinHeight" Value="32" />
+      <Setter Property="CornerRadius" Value="10" />
+    </Style>
+
+    <Style Selector="Button:pointerover">
+      <Setter Property="Background" Value="{DynamicResource MacControlHoverBrush}" />
+    </Style>
+
+    <Style Selector="Button:pressed">
+      <Setter Property="Background" Value="{DynamicResource MacControlPressedBrush}" />
+    </Style>
+
+    <Style Selector="Button.accent">
+      <Setter Property="Background" Value="{DynamicResource MacAccentBrush}" />
+      <Setter Property="BorderBrush" Value="{DynamicResource MacAccentBrush}" />
+      <Setter Property="Foreground" Value="#FFFFFF" />
+    </Style>
+
+    <Style Selector="Button.accent:pointerover">
+      <Setter Property="Background" Value="#0077EA" />
+      <Setter Property="BorderBrush" Value="#0077EA" />
+    </Style>
+
+    <Style Selector="Button.accent:pressed">
+      <Setter Property="Background" Value="#0068CF" />
+      <Setter Property="BorderBrush" Value="#0068CF" />
+    </Style>
+
+    <Style Selector="Button.navitem">
+      <Setter Property="Background" Value="Transparent" />
+      <Setter Property="BorderBrush" Value="Transparent" />
+      <Setter Property="BorderThickness" Value="1" />
+      <Setter Property="Padding" Value="10,8" />
+      <Setter Property="MinHeight" Value="36" />
+      <Setter Property="HorizontalContentAlignment" Value="Left" />
+      <Setter Property="Foreground" Value="{DynamicResource MacTextPrimaryBrush}" />
+      <Setter Property="CornerRadius" Value="9" />
+    </Style>
+
+    <Style Selector="Button.navitem:pointerover">
+      <Setter Property="Background" Value="#66FFFFFF" />
+      <Setter Property="BorderBrush" Value="{DynamicResource MacDividerBrush}" />
+    </Style>
+
+    <Style Selector="Button.navitem.active">
+      <Setter Property="Background" Value="#96FFFFFF" />
+      <Setter Property="BorderBrush" Value="{DynamicResource MacDividerBrush}" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+    </Style>
+
+    <Style Selector="TextBox">
+      <Setter Property="Background" Value="{DynamicResource MacControlBrush}" />
+      <Setter Property="BorderBrush" Value="{DynamicResource MacDividerBrush}" />
+      <Setter Property="BorderThickness" Value="1" />
+      <Setter Property="Padding" Value="10,6" />
+      <Setter Property="MinHeight" Value="32" />
+      <Setter Property="CornerRadius" Value="10" />
+    </Style>
+
+    <Style Selector="TextBox:focus">
+      <Setter Property="BorderBrush" Value="{DynamicResource MacAccentBrush}" />
+    </Style>
+
+    <Style Selector="TextBox.searchbox">
+      <Setter Property="Background" Value="#90FFFFFF" />
+      <Setter Property="BorderBrush" Value="{DynamicResource MacDividerBrush}" />
+      <Setter Property="CornerRadius" Value="9" />
+      <Setter Property="Padding" Value="12,7" />
+    </Style>
+
+    <Style Selector="ComboBox">
+      <Setter Property="Background" Value="{DynamicResource MacControlBrush}" />
+      <Setter Property="BorderBrush" Value="{DynamicResource MacDividerBrush}" />
+      <Setter Property="BorderThickness" Value="1" />
+      <Setter Property="Padding" Value="10,6" />
+      <Setter Property="MinHeight" Value="32" />
+      <Setter Property="CornerRadius" Value="10" />
+    </Style>
+
+    <Style Selector="ComboBox:pointerover">
+      <Setter Property="Background" Value="{DynamicResource MacControlHoverBrush}" />
+    </Style>
+
+    <Style Selector="CheckBox">
+      <Setter Property="FontSize" Value="13" />
+    </Style>
+
+    <Style Selector="Expander">
+      <Setter Property="Background" Value="{DynamicResource MacSurfaceMutedBrush}" />
+      <Setter Property="BorderBrush" Value="{DynamicResource MacDividerBrush}" />
+      <Setter Property="BorderThickness" Value="1" />
+      <Setter Property="CornerRadius" Value="12" />
+      <Setter Property="Padding" Value="10" />
+    </Style>
+
+    <Style Selector="ListBox">
+      <Setter Property="Background" Value="{DynamicResource MacSurfaceMutedBrush}" />
+      <Setter Property="BorderBrush" Value="{DynamicResource MacDividerBrush}" />
+      <Setter Property="BorderThickness" Value="1" />
+      <Setter Property="CornerRadius" Value="12" />
+      <Setter Property="Padding" Value="8" />
+    </Style>
+
+    <Style Selector="ListBoxItem">
+      <Setter Property="Padding" Value="8" />
+      <Setter Property="Margin" Value="0,2,0,2" />
+      <Setter Property="Background" Value="Transparent" />
+    </Style>
+
+    <Style Selector="ListBoxItem:selected">
+      <Setter Property="Background" Value="{DynamicResource MacAccentSoftBrush}" />
+    </Style>
+
+    <Style Selector="ProgressBar">
+      <Setter Property="MinHeight" Value="6" />
+      <Setter Property="Background" Value="#12000000" />
+      <Setter Property="Foreground" Value="{DynamicResource MacAccentBrush}" />
+      <Setter Property="CornerRadius" Value="99" />
+    </Style>
+
+    <Style Selector="Border.quickcard">
+      <Setter Property="Width" Value="260" />
+      <Setter Property="Background" Value="#F6F7FA" />
+      <Setter Property="BorderBrush" Value="{DynamicResource MacDividerBrush}" />
+      <Setter Property="BorderThickness" Value="1" />
+      <Setter Property="CornerRadius" Value="12" />
+      <Setter Property="Padding" Value="14,12" />
+    </Style>
+  </Application.Styles>
+</Application>

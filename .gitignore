@@ -1,0 +1,38 @@
+# macOS
+.DS_Store
+._*
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# .NET build outputs
+**/bin/
+**/obj/
+artifacts/
+
+# User-specific IDE and build settings
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Python caches and local environments
+**/__pycache__/
+*.py[cod]
+*.pyd
+.Python
+.venv/
+venv/
+
+# Test and coverage outputs
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*~

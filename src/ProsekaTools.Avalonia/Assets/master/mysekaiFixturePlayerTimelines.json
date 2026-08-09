@@ -1,0 +1,800 @@
+[
+  {
+    "id": 1,
+    "mysekaiFixtureId": 6,
+    "actionPoint": 14,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_r"
+  },
+  {
+    "id": 2,
+    "mysekaiFixtureId": 6,
+    "actionPoint": 12,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_l"
+  },
+  {
+    "id": 3,
+    "mysekaiFixtureId": 8,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 4,
+    "mysekaiFixtureId": 10,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_r"
+  },
+  {
+    "id": 5,
+    "mysekaiFixtureId": 10,
+    "actionPoint": 23,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_l"
+  },
+  {
+    "id": 6,
+    "mysekaiFixtureId": 21,
+    "actionPoint": 14,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_r"
+  },
+  {
+    "id": 7,
+    "mysekaiFixtureId": 21,
+    "actionPoint": 12,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_l"
+  },
+  {
+    "id": 8,
+    "mysekaiFixtureId": 23,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 9,
+    "mysekaiFixtureId": 25,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_r"
+  },
+  {
+    "id": 10,
+    "mysekaiFixtureId": 25,
+    "actionPoint": 23,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_l"
+  },
+  {
+    "id": 11,
+    "mysekaiFixtureId": 36,
+    "actionPoint": 14,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_r"
+  },
+  {
+    "id": 12,
+    "mysekaiFixtureId": 36,
+    "actionPoint": 12,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_l"
+  },
+  {
+    "id": 13,
+    "mysekaiFixtureId": 38,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 14,
+    "mysekaiFixtureId": 40,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_r"
+  },
+  {
+    "id": 15,
+    "mysekaiFixtureId": 40,
+    "actionPoint": 23,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_l"
+  },
+  {
+    "id": 16,
+    "mysekaiFixtureId": 51,
+    "actionPoint": 14,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_r"
+  },
+  {
+    "id": 17,
+    "mysekaiFixtureId": 51,
+    "actionPoint": 12,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_l"
+  },
+  {
+    "id": 18,
+    "mysekaiFixtureId": 53,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 19,
+    "mysekaiFixtureId": 55,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_r"
+  },
+  {
+    "id": 20,
+    "mysekaiFixtureId": 55,
+    "actionPoint": 23,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_l"
+  },
+  {
+    "id": 21,
+    "mysekaiFixtureId": 66,
+    "actionPoint": 14,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_r"
+  },
+  {
+    "id": 22,
+    "mysekaiFixtureId": 66,
+    "actionPoint": 12,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_l"
+  },
+  {
+    "id": 23,
+    "mysekaiFixtureId": 68,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 24,
+    "mysekaiFixtureId": 70,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_r"
+  },
+  {
+    "id": 25,
+    "mysekaiFixtureId": 70,
+    "actionPoint": 23,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_l"
+  },
+  {
+    "id": 26,
+    "mysekaiFixtureId": 81,
+    "actionPoint": 14,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_r"
+  },
+  {
+    "id": 27,
+    "mysekaiFixtureId": 81,
+    "actionPoint": 12,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_l"
+  },
+  {
+    "id": 28,
+    "mysekaiFixtureId": 83,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 29,
+    "mysekaiFixtureId": 85,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_r"
+  },
+  {
+    "id": 30,
+    "mysekaiFixtureId": 85,
+    "actionPoint": 23,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_l"
+  },
+  {
+    "id": 31,
+    "mysekaiFixtureId": 141,
+    "actionPoint": 14,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_r"
+  },
+  {
+    "id": 32,
+    "mysekaiFixtureId": 141,
+    "actionPoint": 12,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_l"
+  },
+  {
+    "id": 33,
+    "mysekaiFixtureId": 143,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 34,
+    "mysekaiFixtureId": 147,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 35,
+    "mysekaiFixtureId": 150,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_r"
+  },
+  {
+    "id": 36,
+    "mysekaiFixtureId": 150,
+    "actionPoint": 23,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_l"
+  },
+  {
+    "id": 37,
+    "mysekaiFixtureId": 151,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 38,
+    "mysekaiFixtureId": 177,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 39,
+    "mysekaiFixtureId": 178,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_r"
+  },
+  {
+    "id": 40,
+    "mysekaiFixtureId": 178,
+    "actionPoint": 23,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_l"
+  },
+  {
+    "id": 41,
+    "mysekaiFixtureId": 184,
+    "actionPoint": 23,
+    "assetbundleName": "tl_ext0005_fixture_swing1_000"
+  },
+  {
+    "id": 42,
+    "mysekaiFixtureId": 189,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_r"
+  },
+  {
+    "id": 43,
+    "mysekaiFixtureId": 189,
+    "actionPoint": 23,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_l"
+  },
+  {
+    "id": 44,
+    "mysekaiFixtureId": 204,
+    "actionPoint": 12,
+    "assetbundleName": "tl_env0002_fixture_futon1_000_l"
+  },
+  {
+    "id": 45,
+    "mysekaiFixtureId": 204,
+    "actionPoint": 14,
+    "assetbundleName": "tl_env0002_fixture_futon1_000_r"
+  },
+  {
+    "id": 46,
+    "mysekaiFixtureId": 217,
+    "actionPoint": 14,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_r"
+  },
+  {
+    "id": 47,
+    "mysekaiFixtureId": 217,
+    "actionPoint": 12,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_l"
+  },
+  {
+    "id": 48,
+    "mysekaiFixtureId": 219,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 49,
+    "mysekaiFixtureId": 234,
+    "actionPoint": 14,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_r"
+  },
+  {
+    "id": 50,
+    "mysekaiFixtureId": 234,
+    "actionPoint": 12,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_l"
+  },
+  {
+    "id": 51,
+    "mysekaiFixtureId": 236,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 52,
+    "mysekaiFixtureId": 253,
+    "actionPoint": 14,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_r"
+  },
+  {
+    "id": 53,
+    "mysekaiFixtureId": 253,
+    "actionPoint": 12,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_l"
+  },
+  {
+    "id": 54,
+    "mysekaiFixtureId": 255,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0009_fixture_cushion1_000"
+  },
+  {
+    "id": 55,
+    "mysekaiFixtureId": 259,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 56,
+    "mysekaiFixtureId": 270,
+    "actionPoint": 14,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_r"
+  },
+  {
+    "id": 57,
+    "mysekaiFixtureId": 270,
+    "actionPoint": 12,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_l"
+  },
+  {
+    "id": 58,
+    "mysekaiFixtureId": 272,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_r"
+  },
+  {
+    "id": 59,
+    "mysekaiFixtureId": 272,
+    "actionPoint": 23,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_l"
+  },
+  {
+    "id": 60,
+    "mysekaiFixtureId": 309,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 61,
+    "mysekaiFixtureId": 321,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 62,
+    "mysekaiFixtureId": 334,
+    "actionPoint": 14,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_r"
+  },
+  {
+    "id": 63,
+    "mysekaiFixtureId": 334,
+    "actionPoint": 12,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_l"
+  },
+  {
+    "id": 64,
+    "mysekaiFixtureId": 337,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 65,
+    "mysekaiFixtureId": 451,
+    "actionPoint": 13,
+    "assetbundleName": "tl_env0002_fixture_zaisu1_000"
+  },
+  {
+    "id": 66,
+    "mysekaiFixtureId": 452,
+    "actionPoint": 12,
+    "assetbundleName": "tl_env0002_fixture_futon1_000_l"
+  },
+  {
+    "id": 67,
+    "mysekaiFixtureId": 452,
+    "actionPoint": 14,
+    "assetbundleName": "tl_env0002_fixture_futon1_000_r"
+  },
+  {
+    "id": 68,
+    "mysekaiFixtureId": 460,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 69,
+    "mysekaiFixtureId": 470,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 70,
+    "mysekaiFixtureId": 524,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 71,
+    "mysekaiFixtureId": 660,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 72,
+    "mysekaiFixtureId": 688,
+    "actionPoint": 14,
+    "assetbundleName": "tl_ext0019_fixture_deckchair1_000_r"
+  },
+  {
+    "id": 73,
+    "mysekaiFixtureId": 688,
+    "actionPoint": 12,
+    "assetbundleName": "tl_ext0019_fixture_deckchair1_000_l"
+  },
+  {
+    "id": 74,
+    "mysekaiFixtureId": 693,
+    "actionPoint": 11,
+    "assetbundleName": "tl_ext0019_pierce_pool1_000_b"
+  },
+  {
+    "id": 75,
+    "mysekaiFixtureId": 693,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0019_pierce_pool1_000_f"
+  },
+  {
+    "id": 76,
+    "mysekaiFixtureId": 694,
+    "actionPoint": 14,
+    "assetbundleName": "tl_ext0019_pierce_jacuzzi1_000_r"
+  },
+  {
+    "id": 77,
+    "mysekaiFixtureId": 694,
+    "actionPoint": 11,
+    "assetbundleName": "tl_ext0019_pierce_jacuzzi1_000_b"
+  },
+  {
+    "id": 78,
+    "mysekaiFixtureId": 694,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0019_pierce_jacuzzi1_000_f"
+  },
+  {
+    "id": 79,
+    "mysekaiFixtureId": 695,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_r"
+  },
+  {
+    "id": 80,
+    "mysekaiFixtureId": 695,
+    "actionPoint": 23,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_l"
+  },
+  {
+    "id": 81,
+    "mysekaiFixtureId": 696,
+    "actionPoint": 14,
+    "assetbundleName": "tl_ext0019_fixture_hammock1_000"
+  },
+  {
+    "id": 82,
+    "mysekaiFixtureId": 726,
+    "actionPoint": 14,
+    "assetbundleName": "tl_ext0013_fixture_car1_000_r"
+  },
+  {
+    "id": 83,
+    "mysekaiFixtureId": 726,
+    "actionPoint": 12,
+    "assetbundleName": "tl_ext0013_fixture_car1_000_l"
+  },
+  {
+    "id": 84,
+    "mysekaiFixtureId": 727,
+    "actionPoint": 14,
+    "assetbundleName": "tl_ext0013_fixture_bike1_000_r"
+  },
+  {
+    "id": 85,
+    "mysekaiFixtureId": 727,
+    "actionPoint": 12,
+    "assetbundleName": "tl_ext0013_fixture_bike1_000_l"
+  },
+  {
+    "id": 86,
+    "mysekaiFixtureId": 748,
+    "actionPoint": 13,
+    "assetbundleName": "tl_env0008_fixture_rockingsheep1_000_f"
+  },
+  {
+    "id": 87,
+    "mysekaiFixtureId": 748,
+    "actionPoint": 11,
+    "assetbundleName": "tl_env0008_fixture_rockingsheep1_000_b"
+  },
+  {
+    "id": 88,
+    "mysekaiFixtureId": 749,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0009_fixture_cushion1_000"
+  },
+  {
+    "id": 89,
+    "mysekaiFixtureId": 752,
+    "actionPoint": 14,
+    "assetbundleName": "tl_con0001_fixture_flyingcar1_000_r"
+  },
+  {
+    "id": 90,
+    "mysekaiFixtureId": 752,
+    "actionPoint": 12,
+    "assetbundleName": "tl_con0001_fixture_flyingcar1_000_l"
+  },
+  {
+    "id": 91,
+    "mysekaiFixtureId": 759,
+    "actionPoint": 14,
+    "assetbundleName": "tl_con0002_fixture_stuffedwhale1_000_r"
+  },
+  {
+    "id": 92,
+    "mysekaiFixtureId": 759,
+    "actionPoint": 12,
+    "assetbundleName": "tl_con0002_fixture_stuffedwhale1_000_l"
+  },
+  {
+    "id": 93,
+    "mysekaiFixtureId": 760,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_sofa2_000"
+  },
+  {
+    "id": 94,
+    "mysekaiFixtureId": 813,
+    "actionPoint": 14,
+    "assetbundleName": "tl_con0004_fixture_bed1_000_r"
+  },
+  {
+    "id": 95,
+    "mysekaiFixtureId": 813,
+    "actionPoint": 12,
+    "assetbundleName": "tl_con0004_fixture_bed1_000_l"
+  },
+  {
+    "id": 96,
+    "mysekaiFixtureId": 814,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_sofa2_000"
+  },
+  {
+    "id": 97,
+    "mysekaiFixtureId": 848,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 98,
+    "mysekaiFixtureId": 853,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 99,
+    "mysekaiFixtureId": 986,
+    "actionPoint": 23,
+    "assetbundleName": "tl_env0007_fixture_sofa1_000_r"
+  },
+  {
+    "id": 100,
+    "mysekaiFixtureId": 988,
+    "actionPoint": 13,
+    "assetbundleName": "tl_env0007_fixture_highchair1_000"
+  },
+  {
+    "id": 101,
+    "mysekaiFixtureId": 991,
+    "actionPoint": 13,
+    "assetbundleName": "tl_env0007_fixture_djbooth1_000"
+  },
+  {
+    "id": 102,
+    "mysekaiFixtureId": 974,
+    "actionPoint": 13,
+    "assetbundleName": "tl_env0002_fixture_zaisu1_000"
+  },
+  {
+    "id": 103,
+    "mysekaiFixtureId": 1012,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0021_fixture_pumpkin2_000"
+  },
+  {
+    "id": 104,
+    "mysekaiFixtureId": 1017,
+    "actionPoint": 14,
+    "assetbundleName": "tl_ext0020_fixture_carriage1_000_r"
+  },
+  {
+    "id": 105,
+    "mysekaiFixtureId": 1017,
+    "actionPoint": 12,
+    "assetbundleName": "tl_ext0020_fixture_carriage1_000_l"
+  },
+  {
+    "id": 106,
+    "mysekaiFixtureId": 1018,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0020_fixture_gazebo1_000_r"
+  },
+  {
+    "id": 107,
+    "mysekaiFixtureId": 1018,
+    "actionPoint": 23,
+    "assetbundleName": "tl_ext0020_fixture_gazebo1_000_l"
+  },
+  {
+    "id": 108,
+    "mysekaiFixtureId": 1019,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0020_fixture_horsestatue1_000"
+  },
+  {
+    "id": 109,
+    "mysekaiFixtureId": 1020,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0020_fixture_horsestatue2_000"
+  },
+  {
+    "id": 110,
+    "mysekaiFixtureId": 1025,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 111,
+    "mysekaiFixtureId": 1058,
+    "actionPoint": 14,
+    "assetbundleName": "tl_ext0011_fixture_bed1_000_r"
+  },
+  {
+    "id": 112,
+    "mysekaiFixtureId": 1058,
+    "actionPoint": 12,
+    "assetbundleName": "tl_ext0011_fixture_bed1_000_l"
+  },
+  {
+    "id": 113,
+    "mysekaiFixtureId": 1060,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_r"
+  },
+  {
+    "id": 114,
+    "mysekaiFixtureId": 1060,
+    "actionPoint": 23,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_l"
+  },
+  {
+    "id": 115,
+    "mysekaiFixtureId": 858,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 116,
+    "mysekaiFixtureId": 863,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 117,
+    "mysekaiFixtureId": 1087,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0022_pierce_outbath1_000_f"
+  },
+  {
+    "id": 118,
+    "mysekaiFixtureId": 1087,
+    "actionPoint": 12,
+    "assetbundleName": "tl_ext0022_pierce_outbath1_000_l"
+  },
+  {
+    "id": 119,
+    "mysekaiFixtureId": 1090,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0022_fixture_barrelbath1_000"
+  },
+  {
+    "id": 120,
+    "mysekaiFixtureId": 1096,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_r"
+  },
+  {
+    "id": 121,
+    "mysekaiFixtureId": 1096,
+    "actionPoint": 23,
+    "assetbundleName": "tl_ext0001_fixture_sofa1_000_l"
+  },
+  {
+    "id": 122,
+    "mysekaiFixtureId": 1088,
+    "actionPoint": 11,
+    "assetbundleName": "tl_ext0022_pierce_footbath1_000"
+  },
+  {
+    "id": 123,
+    "mysekaiFixtureId": 868,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 124,
+    "mysekaiFixtureId": 873,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 125,
+    "mysekaiFixtureId": 878,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 126,
+    "mysekaiFixtureId": 1089,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0022_fixture_onsentamago1_000"
+  },
+  {
+    "id": 127,
+    "mysekaiFixtureId": 883,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 128,
+    "mysekaiFixtureId": 1132,
+    "actionPoint": 14,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_r"
+  },
+  {
+    "id": 129,
+    "mysekaiFixtureId": 1132,
+    "actionPoint": 12,
+    "assetbundleName": "tl_ext0001_fixture_bed1_000_l"
+  },
+  {
+    "id": 130,
+    "mysekaiFixtureId": 1134,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 131,
+    "mysekaiFixtureId": 888,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 132,
+    "mysekaiFixtureId": 893,
+    "actionPoint": 13,
+    "assetbundleName": "tl_ext0001_fixture_chair1_000"
+  },
+  {
+    "id": 133,
+    "mysekaiFixtureId": 1136,
+    "actionPoint": 13,
+    "assetbundleName": "tl_env0006_fixture_cockpit1_000"
+  }
+]

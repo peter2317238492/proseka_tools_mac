@@ -1,0 +1,39 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ProsekaTools.Avalonia.Views.HomeView">
+  <ScrollViewer VerticalScrollBarVisibility="Auto">
+    <StackPanel Margin="8" Spacing="12">
+      <Border Classes="card">
+        <StackPanel Spacing="6">
+          <TextBlock Text="开始使用" FontSize="18" FontWeight="SemiBold" />
+          <TextBlock Classes="subtle" Text="从左侧选择工具模块，按流程完成抓取、解密和组卡。" />
+        </StackPanel>
+      </Border>
+
+      <Grid ColumnDefinitions="*,*">
+        <Border Classes="quickcard" Margin="0,0,6,0">
+          <StackPanel Spacing="6">
+            <TextBlock Text="数据抓取" FontWeight="SemiBold" />
+            <TextBlock Classes="subtle" Text="启动本地服务并采集数据请求。" />
+          </StackPanel>
+        </Border>
+
+        <Border Grid.Column="1" Classes="quickcard" Margin="6,0,0,0">
+          <StackPanel Spacing="6">
+            <TextBlock Text="suite / Mysekai" FontWeight="SemiBold" />
+            <TextBlock Classes="subtle" Text="上传或解密数据，生成可用于后续分析的 JSON。" />
+          </StackPanel>
+        </Border>
+      </Grid>
+
+      <Border Classes="quickcard">
+        <StackPanel Spacing="6">
+          <TextBlock Text="推荐流程" FontWeight="SemiBold" />
+          <TextBlock Text="1. 在「数据抓取」采集原始数据。" />
+          <TextBlock Text="2. 在「已拥有的卡片」解密并确认卡面。" />
+          <TextBlock Text="3. 在「组卡器」配置参数并执行推荐。" />
+        </StackPanel>
+      </Border>
+    </StackPanel>
+  </ScrollViewer>
+</UserControl>

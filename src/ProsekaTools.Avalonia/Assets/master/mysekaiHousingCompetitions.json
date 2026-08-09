@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "あなたのマイセカイ",
+    "description": "マイセカイ百景実装記念",
+    "submitStartAt": 1759219200000,
+    "reviewStartAt": 1759219200000,
+    "submitEndAt": 1759737599000,
+    "aggregateAt": 1759737600000,
+    "backgroundImageAssetbundleFileName": "bg_competition_contest_1",
+    "backNumberAccentColorCode": "#9DE0E4"
+  },
+  {
+    "id": 2,
+    "name": "遥BIRTHDAYパーティー'25",
+    "description": "25年遥誕生日と連携したマイセカイ百景",
+    "submitStartAt": 1759590000000,
+    "reviewStartAt": 1759590000000,
+    "submitEndAt": 1760194799000,
+    "aggregateAt": 1760194800000,
+    "backgroundImageAssetbundleFileName": "bg_competition_contest_2",
+    "backNumberAccentColorCode": "#99ccff"
+  },
+  {
+    "id": 3,
+    "name": "穂波BIRTHDAYパーティー'25",
+    "description": "25年穂波誕生日と連携したマイセカイ百景",
+    "submitStartAt": 1761490800000,
+    "reviewStartAt": 1761490800000,
+    "submitEndAt": 1762095599000,
+    "aggregateAt": 1762095600000,
+    "backgroundImageAssetbundleFileName": "bg_competition_contest_1",
+    "backNumberAccentColorCode": "#ee6666"
+  },
+  {
+    "id": 4,
+    "name": "MEIKO ANNIVERSARYパーティー'25",
+    "description": "25年MEIKO記念日と連携したマイセカイ百景",
+    "submitStartAt": 1762268400000,
+    "reviewStartAt": 1762268400000,
+    "submitEndAt": 1762873199000,
+    "aggregateAt": 1762873200000,
+    "backgroundImageAssetbundleFileName": "bg_competition_contest_2",
+    "backNumberAccentColorCode": "#dd4444"
+  },
+  {
+    "id": 5,
+    "name": "彰人BIRTHDAYパーティー'25",
+    "description": "25年彰人誕生日と連携したマイセカイ百景",
+    "submitStartAt": 1762873200000,
+    "reviewStartAt": 1762873200000,
+    "submitEndAt": 1763477999000,
+    "aggregateAt": 1763478000000,
+    "backgroundImageAssetbundleFileName": "bg_competition_contest_1",
+    "backNumberAccentColorCode": "#ff7722"
+  },
+  {
+    "id": 6,
+    "name": "雫BIRTHDAYパーティー'25",
+    "description": "25年雫誕生日と連携したマイセカイ百景",
+    "submitStartAt": 1764946800000,
+    "reviewStartAt": 1764946800000,
+    "submitEndAt": 1765551599000,
+    "aggregateAt": 1765551600000,
+    "backgroundImageAssetbundleFileName": "bg_competition_contest_2",
+    "backNumberAccentColorCode": "#99eedd"
+  },
+  {
+    "id": 7,
+    "name": "あなたのクリスマス'25",
+    "description": "25年クリスマスのマイセカイ百景",
+    "submitStartAt": 1766131200000,
+    "reviewStartAt": 1766131200000,
+    "submitEndAt": 1766674799000,
+    "aggregateAt": 1766674800000,
+    "backgroundImageAssetbundleFileName": "bg_competition_contest_1",
+    "backNumberAccentColorCode": "#9DE0E4"
+  },
+  {
+    "id": 8,
+    "name": "リンANNIVERSARYパーティー'25",
+    "description": "25年リンアニバーサリーと連携したマイセカイ百景",
+    "submitStartAt": 1766761200000,
+    "reviewStartAt": 1766761200000,
+    "submitEndAt": 1767365999000,
+    "aggregateAt": 1767366000000,
+    "backgroundImageAssetbundleFileName": "bg_competition_contest_2",
+    "backNumberAccentColorCode": "#ffcc11"
+  },
+  {
+    "id": 9,
+    "name": "レンANNIVERSARYパーティー'25",
+    "description": "25年レンアニバーサリーと連携したマイセカイ百景",
+    "submitStartAt": 1766761200000,
+    "reviewStartAt": 1766761200000,
+    "submitEndAt": 1767365999000,
+    "aggregateAt": 1767366000000,
+    "backgroundImageAssetbundleFileName": "bg_competition_contest_1",
+    "backNumberAccentColorCode": "#ffee11"
+  },
+  {
+    "id": 10,
+    "name": "志歩BIRTHDAYパーティー'26",
+    "description": "26年志歩誕生日と連携したマイセカイ百景",
+    "submitStartAt": 1767798000000,
+    "reviewStartAt": 1767798000000,
+    "submitEndAt": 1768402799000,
+    "aggregateAt": 1768402800000,
+    "backgroundImageAssetbundleFileName": "bg_competition_contest_2",
+    "backNumberAccentColorCode": "#bbdd22"
+  },
+  {
+    "id": 11,
+    "name": "まふゆBIRTHDAYパーティー'26",
+    "description": "26年まふゆ誕生日と連携したマイセカイ百景",
+    "submitStartAt": 1769439600000,
+    "reviewStartAt": 1769439600000,
+    "submitEndAt": 1770044399000,
+    "aggregateAt": 1770044400000,
+    "backgroundImageAssetbundleFileName": "bg_competition_contest_1",
+    "backNumberAccentColorCode": "#8888cc"
+  },
+  {
+    "id": 12,
+    "name": "ルカANNIVERSARYパーティー'26",
+    "description": "26年ルカ記念日と連携したマイセカイ百景",
+    "submitStartAt": 1769698800000,
+    "reviewStartAt": 1769698800000,
+    "submitEndAt": 1770303599000,
+    "aggregateAt": 1770303600000,
+    "backgroundImageAssetbundleFileName": "bg_competition_contest_2",
+    "backNumberAccentColorCode": "#ffbbcc"
+  }
+]

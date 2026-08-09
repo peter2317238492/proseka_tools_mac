@@ -1,0 +1,22 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ProsekaTools.Avalonia.Views.SuiteUploadView">
+  <Grid Margin="8">
+    <Border Classes="card">
+      <StackPanel Spacing="10">
+        <TextBlock Text="suite 上传" Classes="sectiontitle" />
+
+        <CheckBox x:Name="UseLatestCheckBox" Content="使用最新抓包（captures/suite）" />
+
+        <StackPanel Orientation="Horizontal" Spacing="8">
+          <Button x:Name="ChooseFileButton" Content="选择文件" />
+          <TextBlock x:Name="SelectedFileText" Text="未选择" VerticalAlignment="Center" Classes="subtle" />
+        </StackPanel>
+
+        <Button x:Name="UploadButton" Content="开始上传" Classes="accent" HorizontalAlignment="Left" />
+
+        <TextBlock x:Name="StatusText" Text="" />
+      </StackPanel>
+    </Border>
+  </Grid>
+</UserControl>

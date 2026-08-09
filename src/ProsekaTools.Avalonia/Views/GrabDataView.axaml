@@ -1,0 +1,33 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ProsekaTools.Avalonia.Views.GrabDataView">
+  <Grid Margin="8" RowDefinitions="Auto,*">
+    <Border Classes="card" Margin="0,0,0,10">
+      <StackPanel Spacing="8">
+        <StackPanel Orientation="Horizontal" Spacing="12">
+          <CheckBox x:Name="ServerToggle" Content="启动服务器" />
+          <Button x:Name="OpenWebButton" Content="打开局域网页" />
+          <Button x:Name="OpenOutputDirButton" Content="打开输出目录" />
+          <Button x:Name="ClearLogsButton" Content="清空日志" />
+        </StackPanel>
+        <TextBlock>
+          <Run Text="Local IP: " />
+          <Run x:Name="LocalIpText" Text="-" />
+        </TextBlock>
+        <TextBlock>
+          <Run Text="状态: " />
+          <Run x:Name="ServerStatusText" Text="未启动" />
+        </TextBlock>
+        <TextBlock>
+          <Run Text="局域网页: " />
+          <Run x:Name="ServerUrlText" Text="-" />
+        </TextBlock>
+        <TextBlock Text="日志" FontWeight="SemiBold" Margin="0,8,0,0" />
+      </StackPanel>
+    </Border>
+
+    <Border Grid.Row="1" Classes="panel">
+      <ListBox x:Name="LogsList" />
+    </Border>
+  </Grid>
+</UserControl>

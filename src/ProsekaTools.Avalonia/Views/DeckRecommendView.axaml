@@ -1,0 +1,194 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ProsekaTools.Avalonia.Views.DeckRecommendView">
+  <Grid Margin="8" ColumnDefinitions="*,2*">
+    <ScrollViewer Grid.Column="0">
+      <Border Classes="card">
+        <StackPanel Spacing="10">
+          <TextBlock Text="组卡器" Classes="sectiontitle" />
+
+          <TextBlock Text="地区 (region)" />
+          <ComboBox x:Name="RegionCombo" Width="160" SelectedIndex="4">
+            <ComboBoxItem Content="jp" />
+            <ComboBoxItem Content="tw" />
+            <ComboBoxItem Content="en" />
+            <ComboBoxItem Content="kr" />
+            <ComboBoxItem Content="cn" />
+          </ComboBox>
+
+          <Expander IsExpanded="False" Classes="panel">
+            <Expander.Header>
+              <Grid Height="28" VerticalAlignment="Center">
+                <TextBlock Text="详细选项" VerticalAlignment="Center" />
+              </Grid>
+            </Expander.Header>
+            <StackPanel Spacing="10">
+              <CheckBox x:Name="UseLatestSuiteJsonCheckBox"
+                        IsChecked="True"
+                        Content="使用最新的 suite JSON (%APPDATA%/ProsekaTools/output/owned_cards)" />
+
+              <StackPanel Orientation="Horizontal" Spacing="8">
+                <Button x:Name="ChooseSuiteJsonButton" Content="选择 suite JSON" />
+                <TextBox x:Name="SuiteJsonTextBox" MinWidth="360" IsReadOnly="True" Watermark="未选择文件" />
+              </StackPanel>
+
+              <StackPanel Orientation="Horizontal" Spacing="8">
+                <Button x:Name="ChooseMasterDataButton" Content="选择 masterdata 目录" />
+                <TextBox x:Name="MasterDataTextBox" MinWidth="360" IsReadOnly="True" Watermark="未选择目录" />
+              </StackPanel>
+
+              <StackPanel Orientation="Horizontal" Spacing="8">
+                <Button x:Name="ChooseMusicMetasButton" Content="选择 music metas JSON" />
+                <TextBox x:Name="MusicMetasTextBox" MinWidth="360" IsReadOnly="True" Watermark="未选择文件" />
+              </StackPanel>
+
+              <StackPanel Orientation="Horizontal" Spacing="8">
+                <Button x:Name="ChoosePythonButton" Content="选择 Python" />
+                <TextBox x:Name="PythonExeTextBox" MinWidth="360" Watermark="默认: bundled python / python3" />
+              </StackPanel>
+
+              <TextBlock Text="Live 类型" />
+              <ComboBox x:Name="LiveTypeCombo" SelectedIndex="0" Width="220">
+                <ComboBoxItem Content="multi" />
+                <ComboBoxItem Content="solo" />
+                <ComboBoxItem Content="auto" />
+                <ComboBoxItem Content="challenge" />
+                <ComboBoxItem Content="challenge_auto" />
+                <ComboBoxItem Content="mysekai" />
+              </ComboBox>
+
+              <StackPanel Orientation="Horizontal" Spacing="8">
+                <StackPanel>
+                  <TextBlock Text="Music ID" />
+                  <TextBox x:Name="MusicIdTextBox" Width="160" Text="1" />
+                </StackPanel>
+                <StackPanel>
+                  <TextBlock Text="Difficulty" />
+                  <ComboBox x:Name="MusicDiffCombo" SelectedIndex="3" Width="160">
+                    <ComboBoxItem Content="easy" />
+                    <ComboBoxItem Content="normal" />
+                    <ComboBoxItem Content="hard" />
+                    <ComboBoxItem Content="expert" />
+                    <ComboBoxItem Content="master" />
+                    <ComboBoxItem Content="append" />
+                  </ComboBox>
+                </StackPanel>
+              </StackPanel>
+
+              <StackPanel>
+                <TextBlock Text="单首歌 Music ID (留空使用默认三首)" />
+                <TextBox x:Name="ScoreSongsTextBox" Watermark="留空: 226(hard), 74(expert), 448(expert)" />
+              </StackPanel>
+
+              <StackPanel Orientation="Horizontal" Spacing="8">
+                <StackPanel>
+                  <TextBlock Text="Event ID (可选)" />
+                  <TextBox x:Name="EventIdTextBox" Width="160" Watermark="留空则无活动" />
+                </StackPanel>
+                <StackPanel>
+                  <TextBlock Text="Limit" />
+                  <TextBox x:Name="LimitTextBox" Width="160" Text="10" />
+                </StackPanel>
+              </StackPanel>
+
+              <StackPanel Orientation="Horizontal" Spacing="8">
+                <StackPanel>
+                  <TextBlock Text="目标" />
+                  <ComboBox x:Name="TargetCombo" SelectedIndex="0" Width="160">
+                    <ComboBoxItem Content="score" />
+                    <ComboBoxItem Content="power" />
+                    <ComboBoxItem Content="skill" />
+                    <ComboBoxItem Content="bonus" />
+                  </ComboBox>
+                </StackPanel>
+                <StackPanel>
+                  <TextBlock Text="算法" />
+                  <ComboBox x:Name="AlgorithmCombo" SelectedIndex="0" Width="160">
+                    <ComboBoxItem Content="ga" />
+                    <ComboBoxItem Content="sa" />
+                    <ComboBoxItem Content="dfs" />
+                  </ComboBox>
+                </StackPanel>
+              </StackPanel>
+            </StackPanel>
+          </Expander>
+
+          <StackPanel Orientation="Horizontal" Spacing="8">
+            <Button x:Name="RunButton" Content="开始组卡" Classes="accent" />
+            <Button x:Name="DecryptAndRunButton" Content="解密并组卡" />
+            <ProgressBar x:Name="WorkingBar" IsIndeterminate="True" Width="80" Height="6" IsVisible="False" />
+          </StackPanel>
+
+          <TextBlock x:Name="StatusText" TextWrapping="Wrap" />
+        </StackPanel>
+      </Border>
+    </ScrollViewer>
+
+    <Border Grid.Column="1" Classes="card" Margin="12,0,0,0">
+      <Grid RowDefinitions="Auto,*">
+        <StackPanel Orientation="Horizontal" Spacing="12">
+          <Button x:Name="ClearResultsButton" Content="清空结果" />
+          <TextBlock x:Name="ResultFileText" VerticalAlignment="Center" Classes="subtle" />
+        </StackPanel>
+
+        <Border Grid.Row="1" Classes="panel" Margin="0,8,0,0">
+          <ListBox x:Name="ResultsList">
+            <ListBox.ItemTemplate>
+              <DataTemplate>
+                <Border Classes="panel" Margin="0,4">
+                  <StackPanel Spacing="6">
+                    <ItemsControl ItemsSource="{Binding CardPreviews}">
+                      <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                          <StackPanel Orientation="Horizontal" Spacing="8" />
+                        </ItemsPanelTemplate>
+                      </ItemsControl.ItemsPanel>
+                      <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                          <StackPanel Spacing="4" Width="120">
+                            <TextBlock Text="{Binding CardId}" FontSize="10" />
+                            <Grid Width="110" Height="110">
+                              <Image Source="{Binding FrameImage}" Stretch="Fill" />
+                              <Border Margin="6">
+                                <Image Source="{Binding CardImage}" Stretch="Uniform" />
+                              </Border>
+                              <Image Source="{Binding AttributeImage}"
+                                     Width="24" Height="24"
+                                     HorizontalAlignment="Left"
+                                     VerticalAlignment="Top"
+                                     Margin="2" />
+                              <StackPanel Orientation="Vertical"
+                                          HorizontalAlignment="Left"
+                                          VerticalAlignment="Bottom"
+                                          Margin="2">
+                                <ItemsControl ItemsSource="{Binding RarityStars}">
+                                  <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                      <StackPanel Orientation="Vertical" Spacing="1" />
+                                    </ItemsPanelTemplate>
+                                  </ItemsControl.ItemsPanel>
+                                  <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                      <Image Source="{Binding}" Width="12" Height="12" />
+                                    </DataTemplate>
+                                  </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                              </StackPanel>
+                            </Grid>
+                            <TextBlock Text="{Binding LoadStatus}" FontSize="10" Classes="subtle" />
+                          </StackPanel>
+                        </DataTemplate>
+                      </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                    <TextBlock Text="{Binding SummaryLine}" TextWrapping="Wrap" />
+                    <TextBlock Text="{Binding ScoreLine}" TextWrapping="Wrap" FontSize="12" Classes="subtle" />
+                  </StackPanel>
+                </Border>
+              </DataTemplate>
+            </ListBox.ItemTemplate>
+          </ListBox>
+        </Border>
+      </Grid>
+    </Border>
+  </Grid>
+</UserControl>

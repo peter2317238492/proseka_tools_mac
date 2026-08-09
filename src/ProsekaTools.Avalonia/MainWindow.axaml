@@ -1,0 +1,76 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="ProsekaTools.Avalonia.MainWindow"
+        Width="1220" Height="780"
+        MinWidth="1024" MinHeight="680"
+        WindowStartupLocation="CenterScreen"
+        Title="Proseka Tools">
+  <Grid Margin="12" ColumnDefinitions="250,*">
+    <Border Classes="sidebar">
+      <Grid RowDefinitions="Auto,*">
+        <TextBox Classes="searchbox" Watermark="搜索功能" Margin="0,0,0,10" />
+
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+          <StackPanel Spacing="6">
+            <TextBlock Text="工具" Classes="sideheader" />
+
+            <Button x:Name="NavHomeButton" Tag="home" Classes="navitem active" Click="OnNavClicked">
+              <StackPanel Orientation="Horizontal" Spacing="8">
+                <TextBlock Text="⌂" Classes="navicon" />
+                <TextBlock Text="主页" />
+              </StackPanel>
+            </Button>
+
+            <Button x:Name="NavGrabButton" Tag="grab" Classes="navitem" Click="OnNavClicked">
+              <StackPanel Orientation="Horizontal" Spacing="8">
+                <TextBlock Text="◉" Classes="navicon" />
+                <TextBlock Text="数据抓取" />
+              </StackPanel>
+            </Button>
+
+            <Button x:Name="NavSuiteButton" Tag="suite" Classes="navitem" Click="OnNavClicked">
+              <StackPanel Orientation="Horizontal" Spacing="8">
+                <TextBlock Text="⇪" Classes="navicon" />
+                <TextBlock Text="suite 工具" />
+              </StackPanel>
+            </Button>
+
+            <Button x:Name="NavMysekaiButton" Tag="mysekai" Classes="navitem" Click="OnNavClicked">
+              <StackPanel Orientation="Horizontal" Spacing="8">
+                <TextBlock Text="◇" Classes="navicon" />
+                <TextBlock Text="Mysekai 工具" />
+              </StackPanel>
+            </Button>
+
+            <TextBlock Text="数据" Classes="sideheader" Margin="0,10,0,0" />
+
+            <Button x:Name="NavOwnedCardsButton" Tag="cards" Classes="navitem" Click="OnNavClicked">
+              <StackPanel Orientation="Horizontal" Spacing="8">
+                <TextBlock Text="▣" Classes="navicon" />
+                <TextBlock Text="已拥有的卡片" />
+              </StackPanel>
+            </Button>
+
+            <Button x:Name="NavDeckButton" Tag="deck" Classes="navitem" Click="OnNavClicked">
+              <StackPanel Orientation="Horizontal" Spacing="8">
+                <TextBlock Text="⚙" Classes="navicon" />
+                <TextBlock Text="组卡器" />
+              </StackPanel>
+            </Button>
+          </StackPanel>
+        </ScrollViewer>
+      </Grid>
+    </Border>
+
+    <Border Grid.Column="1" Classes="contentpanel" Margin="12,0,0,0">
+      <Grid RowDefinitions="Auto,*">
+        <StackPanel Margin="8,4,8,0">
+          <TextBlock x:Name="PageTitleText" Classes="pagetitle" Text="主页" />
+          <TextBlock x:Name="PageSubtitleText" Classes="pagesubtitle" Text="常用工具与最近操作" />
+        </StackPanel>
+
+        <ContentControl Grid.Row="1" x:Name="ContentHost" Margin="0,12,0,0" />
+      </Grid>
+    </Border>
+  </Grid>
+</Window>
