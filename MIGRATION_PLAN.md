@@ -11,7 +11,7 @@
 - WinUI 页面：`Pages/GrabDataPage.xaml(.cs)`。
 
 2) suite 工具（Tab2）
-- 选择/拖拽 `.bin` 文件上传到远端服务（`go.mikuware.top` warm-up + `101.34.19.31:5225/uploadTwSuite`）。
+- 选择/拖拽 `.bin` 文件上传到远端服务（`go.mikuware.top` warm-up + `$PROSEKA_UPLOAD_BASE/uploadTwSuite`）。
 - WinUI 页面：`Pages/Tab2Page.xaml(.cs)`。
 
 3) Mysekai 工具（Tab3）

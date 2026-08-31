@@ -15,7 +15,9 @@ public sealed partial class SuiteUploadView : UserControl
 {
     private string? _selectedFile;
     private static readonly Uri WarmupUri = new("http://go.mikuware.top/");
-    private static readonly Uri ApiBaseUri = new("http://101.34.19.31:5225");
+    // Upload target; supplied at runtime via PROSEKA_UPLOAD_BASE (e.g. http://host:port)
+    private static readonly Uri? ApiBaseUri =
+        Uri.TryCreate(Environment.GetEnvironmentVariable("PROSEKA_UPLOAD_BASE"), UriKind.Absolute, out var u) ? u : null;
     private const string UploadPath = "/uploadTwSuite";
     private const string FormFieldName = "files";
 
@@ -123,6 +125,9 @@ public sealed partial class SuiteUploadView : UserControl
 
     private async Task<string> UploadFileAsync(string filePath)
     {
+        if (ApiBaseUri is null)
+            throw new InvalidOperationException("未配置上传服务器：请先设置环境变量 PROSEKA_UPLOAD_BASE（如 http://host:port）。");
+
         var cookieContainer = new CookieContainer();
         using var handler = new HttpClientHandler
         {
